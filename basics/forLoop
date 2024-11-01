@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+#for i in /etc/rc.*
+#do
+#  echo "$i"
+#done
+
+
+#using `` for Linux Command 
+file=`ls`
+#or
+#file=$(ls)
+
+for i in $file
+do
+	echo "File name is  $i"
+done
+
+#echo "I'm in $(pwd)"
+#echo "I'm in `pwd`"  # obsolescent
+# Same

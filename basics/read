@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -p "username: " username
+read -p "password: " password
+read -sp "hidden password: " hiddenPassword

@@ -1,0 +1,44 @@
+#!/bin/bash
+doupleLine="======================="
+
+value="OpenFOAM"
+
+if [ "$value" == "OpenFOAM" ]; then
+    echo "The value is OpenFOAM"
+else
+    echo "The value is not OpenFOAM"
+fi
+
+echo $doupleLine
+
+
+read -p "File name to check: " file
+
+if [ -f "$file" ]; then
+    echo "$file exists."
+else
+    echo "$file does not exist."
+fi
+echo $doupleLine
+
+echo "Enter two numbers to check if a number is greater than the other on"
+
+read -p "first number: " num1
+read -p "second number: " num2
+
+if [ "$num1" -lt "$num2" ]; then
+    echo "$num1 is less than $num2"
+else
+    echo "$num1 is not less than $num2"
+fi
+
+echo $doupleLine
+name="CFD"
+
+if [ "$name" == "OpenFOAM" ]; then
+    echo "Hello, OpenFOAM user!"
+elif [ "$name" == "CFD" ]; then
+    echo "Hello, CFD enthusiast!"
+else
+    echo "Hello, stranger!"
+fi
